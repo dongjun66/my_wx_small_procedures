@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="wx-index-box">
+    <view class="wx-index-top" bindtap = 'navigateToClick'>
+      军哥影视
+    </view>
+  </view>
+</view>

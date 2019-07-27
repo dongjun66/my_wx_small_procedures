@@ -17,9 +17,7 @@ Page({
         my.showToast('正在努力更新中……',2000,'loading');
         return;
       }
-        wx.navigateTo({
-            url: url
-        })
+        my.navigateTo(url)
     },
 
     handleNavigateToUrl(type) {

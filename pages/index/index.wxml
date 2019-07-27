@@ -1,5 +1,9 @@
 <!--index.wxml-->
   <view class="wx-index-box">
-    <view class="wx-index-mode" data-index = '{{index}}' wx:for="{{modeTextData}}" bindtap = 'navigateToClick'>{{item}}</view>
-    <view></view>
+    <view class="wx-index-mode"
+     data-index = '{{index}}'
+     wx:for="{{modeTextData}}"
+     bindtap = 'navigateToClick'>
+      {{item}}
+     </view>
   </view>

@@ -1,7 +1,7 @@
 {
     "pages": [
         "pages/index/index",
-        "pages/user-choose/user-choose"
+        "pages/retro-snaker/retro-snaker"
     ],
     "window": {
         "backgroundTextStyle": "light",

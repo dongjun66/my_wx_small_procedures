@@ -1,8 +1,5 @@
 <!--index.wxml-->
-<view class="container">
   <view class="wx-index-box">
-    <view class="wx-index-top" bindtap = 'navigateToClick'>
-      军哥影视
-    </view>
+    <view class="wx-index-mode" data-index = '{{index}}' wx:for="{{modeTextData}}" bindtap = 'navigateToClick'>{{item}}</view>
+    <view></view>
   </view>
-</view>

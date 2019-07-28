@@ -76,6 +76,7 @@ Page({
   },
 
   start(e) {
+    this.creatBlock();
     this.setData({
       startStatus:false
     })
@@ -100,5 +101,16 @@ Page({
       this.gameOver();
       return;
     }
+    this.creatBlock();
+  },
+
+  creatBlock() {
+    let showBlockData = this.data.showBlockData;
+    showBlockData.unshift(this.randomBlock());
+    this.setData({ showBlockData: showBlockData })
+  },
+
+  randomBlock() {
+    return this.data.whiteBlockArray[Math.floor(Math.random() * 4)];
   }
 })

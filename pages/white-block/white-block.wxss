@@ -70,3 +70,27 @@
   text-align: center;
   line-height: 70rpx;
 }
+
+.block-class {
+  width:100%;
+  height:1200rpx;
+  background:blue;
+}
+
+.title {
+  height:calc(100% - 1200rpx);
+  width:100%;
+  background:#ccc;
+}
+
+.score {
+  position:fixed;
+  top:100rpx;
+  left:250rpx;
+  width:250rpx;
+  height:100rpx;
+  font-size:60rpx;
+  color:#fff;
+  text-align: center;
+  line-height: 100rpx;
+}

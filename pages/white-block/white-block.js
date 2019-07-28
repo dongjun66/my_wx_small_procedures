@@ -13,7 +13,8 @@ Page({
     ],
     showBlockData:[],
     startStatus:true,
-    gameOver:false
+    gameOver:false,
+    time:0
   },
 
   /**
@@ -72,7 +73,7 @@ Page({
       const random = Math.floor(Math.random() * 4);
       newArray.push(array[random]);
     }
-    this.setData({ showBlockData: newArray, gameOver:false,startStatus:true});
+    this.setData({ showBlockData: newArray, gameOver:false,startStatus:true,time:0});
   },
 
   start(e) {
@@ -80,16 +81,19 @@ Page({
     this.setData({
       startStatus:false
     })
+    this.timer = setInterval(()=>{
+      this.setData({time:++this.data.time})
+    },1000)
   },
 
   gameOver() {
     this.setData({
-      gameOver:true
+      gameOver:true,
     })
+    clearInterval(this.timer);
   },
 
   userClickBlock(e) {
-    console.log('e--------',e)
     const dataset = e.target.dataset;
     const { index } = dataset;
     const { type } = dataset;

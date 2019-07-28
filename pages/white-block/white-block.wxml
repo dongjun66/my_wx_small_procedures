@@ -1,0 +1,26 @@
+<!-- 别踩白块 -->
+<view class="white-block-box">
+  <view 
+   class="black-and-white"
+   wx:for="{{showBlockData}}"
+   wx:for-item="value"
+   wx:for-index="Pindex"
+   >
+    <view 
+     wx:for="{{value}}"
+     class="{{item}}"
+     data-index="{{Pindex}}"
+     data-type="{{item}}"
+     bindtap="userClickBlock">
+      <block wx:if="{{item == 'color-black' && startStatus && Pindex == 2}}" >
+          开始
+      </block>
+    </view>
+  </view>
+</view>
+
+<!-- gameOver -->
+<view wx:if="{{gameOver}}" class="game-over-box">
+  <view>Game Over</view>
+  <view bindtap="init">再来一局</view>
+</view>

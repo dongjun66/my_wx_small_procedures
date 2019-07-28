@@ -24,5 +24,8 @@ Page({
       if (type === '贪吃蛇') {
         return '/pages/retro-snaker/retro-snaker';
       }
+      if (type === '别踩白块') {
+        return '/pages/white-block/white-block'
+      }
     }
 })

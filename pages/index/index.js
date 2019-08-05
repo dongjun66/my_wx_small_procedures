@@ -27,5 +27,8 @@ Page({
       if (type === '别踩白块') {
         return '/pages/white-block/white-block'
       }
+      if (type === '飞机大战') {
+        return '/pages/aircraft-battle/aircraft-battle';
+      }
     }
 })

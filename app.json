@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/retro-snaker/retro-snaker",
-    "pages/white-block/white-block"
+    "pages/white-block/white-block",
+    "pages/aircraft-battle/aircraft-battle"
   ],
   "window": {
     "backgroundTextStyle": "light",

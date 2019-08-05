@@ -15,5 +15,5 @@
     text-align: center;
     line-height: 200rpx;
     font-size: 30rpx;
-    margin-bottom:20rpx;
+    margin-bottom: 20rpx;
 }
